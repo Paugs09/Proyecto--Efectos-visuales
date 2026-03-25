@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patitas & Hogar — Adopción Responsable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/styles/efectos.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVEGACIÓN
+  ══════════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">Patitas <span>&amp;</span> Hogar</div>
+      <ul class="nav-links">
+        <li><a href="#animales">Adoptar</a></li>
+        <li><a href="#como">Cómo funciona</a></li>
+        <li><a href="#formulario">Solicitar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#formulario" class="btn nav-cta">Quiero adoptar</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-tag">🐾 Refugio oficial · San Gil, Colombia</div>
+    <h1>Dale un hogar a quien <em>más lo necesita</em></h1>
+    <p>Conectamos perros y gatos rescatados con familias que los amarán para siempre.</p>
+    <div class="hero-btns">
+      <a href="#animales" class="btn btn-primary">Ver animales disponibles</a>
+      <a href="#como"     class="btn btn-secondary">¿Cómo funciona?</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">1,240+</div>
+        <div class="stat-label">Adoptados</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">38</div>
+        <div class="stat-label">Disponibles hoy</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">6 años</div>
+        <div class="stat-label">De experiencia</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       FILTRO
+  ══════════════════════════════════════ -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <span class="filter-label">Filtrar:</span>
+      <button class="filter-chip active">Todos</button>
+      <button class="filter-chip">🐶 Perros</button>
+      <button class="filter-chip">🐱 Gatos</button>
+      <button class="filter-chip">Cachorros</button>
+      <button class="filter-chip">Adultos</button>
+      <button class="filter-chip">Urgente</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ANIMALES EN ADOPCIÓN
+  ══════════════════════════════════════ -->
+  <section class="section" id="animales">
+    <div class="section-header">
+      <h2>Están esperando<br><span>por ti</span></h2>
+      <a href="#" class="ver-todos">Ver todos →</a>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- Card 1 -->
+      <article class="animal-card">
+        <div class="card-foto">
+          <img class="photos" src="/img/criollo.jpg" alt="Simón, Golden Retriever">
+          <span class="card-badge">Perro</span>
+          <button class="card-fav">🤍</button>
+        </div>
+        <div class="card-info">
+          <div class="card-tipo">Perrito criollo</div>
+          <h3 class="card-nombre">Simón</h3>
+          <div class="card-detalles">
+            <span class="detalle-tag">3 años</span>
+            <span class="detalle-tag">Macho</span>
+            <span class="detalle-tag">Grande</span>
+            <span class="detalle-tag">Vacunado</span>
+          </div>
+          <p class="card-desc">Simón es juguetón y cariñoso. Le encanta correr en el parque y dormir a los pies de su humano. Se lleva bien con niños y otros perros.</p>
+          <a href="#formulario" class="btn btn-adoptar">Quiero adoptar a Simón</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="animal-card">
+        <div class="card-foto">
+          <img class="photos" src="/img/Pirulita.png" alt="Luna, gata doméstica">
+          <span class="card-badge urgente">Urgente</span>
+          <button class="card-fav">🤍</button>
+        </div>
+        <div class="card-info">
+          <div class="card-tipo">Gata doméstica</div>
+          <h3 class="card-nombre">Pirulita</h3>
+          <div class="card-detalles">
+            <span class="detalle-tag">1 año</span>
+            <span class="detalle-tag">Hembra</span>
+            <span class="detalle-tag">Pequeña</span>
+            <span class="detalle-tag">Esterilizada</span>
+          </div>
+          <p class="card-desc">Pirulita llegó al refugio hace 8 meses. Es tímida al principio, pero una vez que confía es la más mañanera y ronroneadora del lugar.</p>
+          <a href="#formulario" class="btn btn-adoptar">Quiero adoptar a Pirulita</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="animal-card">
+        <div class="card-foto">
+          <img class="photos" src="/img/Deiver.png" alt="Tobi, mestizo">
+          <span class="card-badge">Gato</span>
+          <button class="card-fav">🤍</button>
+        </div>
+        <div class="card-info">
+          <div class="card-tipo">Gato doméstico</div>
+          <h3 class="card-nombre">Tobi</h3>
+          <div class="card-detalles">
+            <span class="detalle-tag">5 años</span>
+            <span class="detalle-tag">Macho</span>
+            <span class="detalle-tag">Mediano</span>
+            <span class="detalle-tag">Castrado</span>
+          </div>
+          <p class="card-desc">Tobi es tranquilo y obediente. Ya sabe sus comandos básicos y es ideal para apartamento. Su sueño es tener un sofá propio.</p>
+          <a href="#formulario" class="btn btn-adoptar">Quiero adoptar a Tobi</a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="animal-card">
+        <div class="card-foto">
+          <img class="photos" src="/img/Jaime.png" alt="Miel, siamés mix">
+          <span class="card-badge">Gato</span>
+          <button class="card-fav">🤍</button>
+        </div>
+        <div class="card-info">
+          <div class="card-tipo">Gato doméstico</div>
+          <h3 class="card-nombre">Miel</h3>
+          <div class="card-detalles">
+            <span class="detalle-tag">2 años</span>
+            <span class="detalle-tag">Hembra</span>
+            <span class="detalle-tag">Pequeña</span>
+            <span class="detalle-tag">Vacunada</span>
+          </div>
+          <p class="card-desc">Miel ama los rincones cálidos, los juguetes de plumas y seguirte a todas partes. Es muy vocal y no tardará en aprender tu horario.</p>
+          <a href="#formulario" class="btn btn-adoptar">Quiero adoptar a Miel</a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="animal-card">
+        <div class="card-foto">
+          <img class="photos" src="/img/perro2.jpg" alt="Rocco, labrador mix">
+          <span class="card-badge urgente">Urgente</span>
+          <button class="card-fav">🤍</button>
+        </div>
+        <div class="card-info">
+          <div class="card-tipo">Perrito criollo</div>
+          <h3 class="card-nombre">Rocco</h3>
+          <div class="card-detalles">
+            <span class="detalle-tag">7 años</span>
+            <span class="detalle-tag">Macho</span>
+            <span class="detalle-tag">Grande</span>
+            <span class="detalle-tag">Castrado</span>
+          </div>
+          <p class="card-desc">Rocco lleva más tiempo en el refugio. Es fiel, sereno y busca una familia que entienda que los adultos tienen el corazón más grande.</p>
+          <a href="#formulario" class="btn btn-adoptar">Quiero adoptar a Rocco</a>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="animal-card">
+        <div class="card-foto">
+          <img class="photos" src="/img/perro3.jpg" alt="Carbón, gato doméstico">
+          <span class="card-badge">Perro</span>
+          <button class="card-fav">🤍</button>
+        </div>
+        <div class="card-info">
+          <div class="card-tipo">Perro doméstico</div>
+          <h3 class="card-nombre">Carbón</h3>
+          <div class="card-detalles">
+            <span class="detalle-tag">4 meses</span>
+            <span class="detalle-tag">Macho</span>
+            <span class="detalle-tag">Pequeño</span>
+            <span class="detalle-tag">En proceso</span>
+          </div>
+          <p class="card-desc">Carbón es el más travieso del refugio. Necesita un hogar con paciencia, juego y mucho amor. Viene con su hermana Canela si lo deseas.</p>
+          <a href="#formulario" class="btn btn-adoptar">Quiero adoptar a Carbón</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="sep">🐾 &nbsp; 🐾 &nbsp; 🐾</div>
+
+  <!-- ══════════════════════════════════════
+       CÓMO FUNCIONA
+  ══════════════════════════════════════ -->
+  <section class="como-funciona" id="como">
+    <div class="como-inner">
+      <h2>El proceso es más fácil<br>de lo que crees</h2>
+      <div class="pasos-grid">
+
+        <div class="paso">
+          <div class="paso-icono">🔍</div>
+          <div class="paso-num">Paso 01</div>
+          <h3>Elige tu compañero</h3>
+          <p>Navega los perfiles, filtra por especie, edad y tamaño, y encuentra al que conecte contigo.</p>
+        </div>
+
+        <div class="paso">
+          <div class="paso-icono">📋</div>
+          <div class="paso-num">Paso 02</div>
+          <h3>Llena el formulario</h3>
+          <p>Cuéntanos sobre tu hogar, tu estilo de vida y por qué quieres adoptar. Es rápido y sencillo.</p>
+        </div>
+
+        <div class="paso">
+          <div class="paso-icono">🤝</div>
+          <div class="paso-num">Paso 03</div>
+          <h3>Entrevista y visita</h3>
+          <p>Agendamos una visita al refugio para que puedas conocer al animal en persona.</p>
+        </div>
+
+        <div class="paso">
+          <div class="paso-icono">🏠</div>
+          <div class="paso-num">Paso 04</div>
+          <h3>¡Nuevo hogar!</h3>
+          <p>Firma el acuerdo de adopción responsable y lleva a tu nuevo amigo a casa. ¡Familia completa!</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TESTIMONIOS
+  ══════════════════════════════════════ -->
+  <section class="testimonios">
+    <h2>Familias que ya adoptaron 🐾</h2>
+    <div class="testimonios-grid">
+
+      <div class="testimonio">
+        <div class="testimonio-stars">★★★★★</div>
+        <p class="testimonio-texto">"Adoptamos a Lola hace dos años y cambió nuestra vida completamente. El proceso fue claro, humano y sin burocracia innecesaria. Totalmente recomendado."</p>
+        <div class="testimonio-autor">
+          <div class="autor-avatar">👩</div>
+          <div>
+            <div class="autor-nombre">Valentina Ríos</div>
+            <div class="autor-pet">Mamá de Lola 🐕</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio">
+        <div class="testimonio-stars">★★★★★</div>
+        <p class="testimonio-texto">"Nunca pensé que un gato adulto pudiera adaptarse tan rápido. Miso llegó asustado y en tres semanas ya dormía en mi almohada. Gracias Patitas &amp; Hogar."</p>
+        <div class="testimonio-autor">
+          <div class="autor-avatar">👨</div>
+          <div>
+            <div class="autor-nombre">Andrés Molina</div>
+            <div class="autor-pet">Papá de Miso 🐱</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio">
+        <div class="testimonio-stars">★★★★★</div>
+        <p class="testimonio-texto">"Adoptamos dos hermanos al mismo tiempo y fue la mejor decisión. El equipo del refugio nos asesoró en todo momento durante el proceso de adaptación."</p>
+        <div class="testimonio-autor">
+          <div class="autor-avatar">👩</div>
+          <div>
+            <div class="autor-nombre">Camila y Jorge Torres</div>
+            <div class="autor-pet">Padres de Paco y Paca 🐾</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CTA BANNER
+  ══════════════════════════════════════ -->
+  <div class="banner-cta">
+    <h2>¿Tienes un animal<br>para dar en adopción?</h2>
+    <p>También recibimos animales rescatados o que necesitan un nuevo hogar temporal.</p>
+    <a href="#contacto" class="btn btn-blanco">Contáctanos aquí</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       FORMULARIO DE ADOPCIÓN
+  ══════════════════════════════════════ -->
+  <section class="formulario-section" id="formulario">
+    <h2>Solicitud de adopción</h2>
+    <p class="subtitulo">Completa el formulario y nos pondremos en contacto contigo en menos de 48 horas.</p>
+
+    <form>
+
+      <div class="form-fila">
+        <div class="form-grupo">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" placeholder="Ej: María García" required />
+        </div>
+        <div class="form-grupo">
+          <label for="telefono">Teléfono *</label>
+          <input type="tel" id="telefono" placeholder="+57 300 000 0000" required />
+        </div>
+      </div>
+
+      <div class="form-grupo">
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" placeholder="correo@ejemplo.com" required />
+      </div>
+
+      <div class="form-fila">
+        <div class="form-grupo">
+          <label for="ciudad">Ciudad *</label>
+          <select id="ciudad" required>
+            <option value="">Selecciona...</option>
+            <option>Bogotá</option>
+            <option>Medellín</option>
+            <option>Cali</option>
+            <option>Barranquilla</option>
+            <option>Otra</option>
+          </select>
+        </div>
+        <div class="form-grupo">
+          <label for="vivienda">Tipo de vivienda *</label>
+          <select id="vivienda" required>
+            <option value="">Selecciona...</option>
+            <option>Casa con jardín</option>
+            <option>Casa sin jardín</option>
+            <option>Apartamento</option>
+            <option>Finca / rural</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-grupo">
+        <label for="animal">Animal de interés *</label>
+        <select id="animal" required>
+          <option value="">Selecciona un animal...</option>
+          <option>Simón (Golden Retriever, 3 años)</option>
+          <option>Luna (Gata doméstica, 1 año)</option>
+          <option>Tobi (Mestizo, 5 años)</option>
+          <option>Miel (Siamés mix, 2 años)</option>
+          <option>Rocco (Labrador mix, 7 años)</option>
+          <option>Carbón (Gatito, 4 meses)</option>
+          <option>Otro / no he decidido</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <label for="experiencia">¿Tienes experiencia con mascotas?</label>
+        <select id="experiencia">
+          <option value="">Selecciona...</option>
+          <option>Sí, tengo o tuve mascotas</option>
+          <option>Sí, pero hace mucho tiempo</option>
+          <option>No, sería mi primera vez</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <label for="motivo">¿Por qué quieres adoptar? *</label>
+        <textarea id="motivo" placeholder="Cuéntanos un poco sobre ti, tu hogar y por qué quieres adoptar…" required></textarea>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" id="terminos" required />
+        <label for="terminos">Acepto el acuerdo de adopción responsable y me comprometo a brindar cuidado, alimentación y atención veterinaria al animal adoptado.</label>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" id="visita" />
+        <label for="visita">Estoy disponible para recibir una visita de seguimiento en los primeros 30 días de la adopción.</label>
+      </div>
+
+      <button type="submit" class="btn btn-submit">Enviar solicitud de adopción 🐾</button>
+
+    </form>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer id="contacto">
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <div>
+          <div class="footer-logo">Patitas <span>&amp;</span> Hogar</div>
+          <p class="footer-desc">Refugio de animales comprometido con la adopción responsable y el bienestar animal en Colombia desde 2018.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Adopción</h4>
+          <ul>
+            <li><a href="#">Perros disponibles</a></li>
+            <li><a href="#">Gatos disponibles</a></li>
+            <li><a href="#">Urgentes</a></li>
+            <li><a href="#">Dar en adopción</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Nosotros</h4>
+          <ul>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Cómo funciona</a></li>
+            <li><a href="#">Voluntariado</a></li>
+            <li><a href="#">Donaciones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="#">📍 San Gil, Colombia</a></li>
+            <li><a href="#">📞 +57 300 123 4567</a></li>
+            <li><a href="#">✉️ hola@patitasyhogar.co</a></li>
+            <li><a href="#">⏰ Lun–Sáb 8am–6pm</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Patitas &amp; Hogar · Todos los derechos reservados.</p>
+        <div class="footer-social">
+          <a href="#">📘</a>
+          <a href="#">📸</a>
+          <a href="#">🐦</a>
+          <a href="#">📺</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
